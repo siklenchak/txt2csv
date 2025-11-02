@@ -1,0 +1,11 @@
+C:\Users\oopas\txt2csv\target\debug\deps\pest_generator-4556f17fb4eb7015.d: C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\lib.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\macros.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\docs.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\generator.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\parse_derive.rs
+
+C:\Users\oopas\txt2csv\target\debug\deps\libpest_generator-4556f17fb4eb7015.rlib: C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\lib.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\macros.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\docs.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\generator.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\parse_derive.rs
+
+C:\Users\oopas\txt2csv\target\debug\deps\libpest_generator-4556f17fb4eb7015.rmeta: C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\lib.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\macros.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\docs.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\generator.rs C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\parse_derive.rs
+
+C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\lib.rs:
+C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\macros.rs:
+C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\docs.rs:
+C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\generator.rs:
+C:\Users\oopas\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\pest_generator-2.8.3\src\parse_derive.rs:

@@ -12,3 +12,4 @@ anyhow = "1.0.100"
 clap = { version = "4.5.51", features = ["derive"] }
 pest = "2"
 pest_derive = "2"
+thiserror = "2.0.17"

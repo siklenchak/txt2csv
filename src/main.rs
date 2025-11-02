@@ -1,6 +1,6 @@
 use anyhow::Result;
-use clap::{Parser, Subcommand}; 
-use pest::Parser as PestParser; 
+use clap::{Parser, Subcommand};
+use pest::Parser as PestParser;
 use std::fs;
 use txt2csv::{Txt2CsvParser, Txt2CsvRule as Rule};
 
