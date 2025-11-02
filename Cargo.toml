@@ -1,0 +1,12 @@
+[package]
+name = "txt2csv"
+version = "0.1.0"
+edition = "2021"
+authors = ["Olena Pasternak <oopasternak@gmail.com>"]
+description = "txt2csv: A simple parser that converts semi-structured .txt files into clean .csv format using pest."
+readme = "README.md"
+license = "MIT"
+
+[dependencies]
+pest = "2"
+pest_derive = "2"

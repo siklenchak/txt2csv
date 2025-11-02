@@ -1,0 +1,8 @@
+WHITESPACE = _{ " " | "\t" }
+NEWLINE = _{ "\n" | "\r\n" }
+comma = _{ WHITESPACE* ~ "," ~ WHITESPACE* }
+bracket_field = @{ "[" ~ (!"]" ~ ANY)* ~ "]" }
+simple_field = @{ (!("," | NEWLINE) ~ ANY)* }
+field = { bracket_field | simple_field }
+row = { field ~ (comma ~ field)* }
+file = { SOI ~ row ~ (NEWLINE+ ~ row)* ~ EOI }
