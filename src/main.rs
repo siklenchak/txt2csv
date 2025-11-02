@@ -1,18 +1,45 @@
-use pest::Parser;
+use anyhow::Result;
+use clap::{Parser, Subcommand}; 
+use pest::Parser as PestParser; 
+use std::fs;
 use txt2csv::{Txt2CsvParser, Txt2CsvRule as Rule};
 
-fn main() {
-    let input = "[ID], [Name], [Age]\n1, Alice, 25\n2, Bob, 30";
+#[derive(Parser)]
+#[command(name = "txt2csv", version, about)]
+struct Cli {
+    #[command(subcommand)]
+    command: Commands,
+}
 
-    match Txt2CsvParser::parse(Rule::file, input) {
-        Ok(pairs) => {
-            println!("Parsed successfully!\n");
+#[derive(Subcommand)]
+enum Commands {
+    Parse {
+        input: String,
+        #[arg(short, long, default_value = "output.csv")]
+        output: String,
+    },
+    Credits,
+}
 
+fn main() -> Result<()> {
+    let cli = Cli::parse();
+
+    match cli.command {
+        Commands::Parse { input, output } => {
+            let txt = fs::read_to_string(&input)?;
+            let pairs = Txt2CsvParser::parse(Rule::file, &txt)?;
             let csv = to_csv(pairs);
-            println!("{}", csv);
+            fs::write(&output, csv)?;
+            println!("✅ Converted {input} → {output}");
         }
-        Err(e) => eprintln!("Error: {e}"),
+        Commands::Credits => {
+            println!("txt2csv © 2025");
+            println!("Developed by Your Name");
+            println!("Built with pest + clap + anyhow");
+        }
     }
+
+    Ok(())
 }
 
 fn to_csv(pairs: pest::iterators::Pairs<Rule>) -> String {
@@ -30,7 +57,7 @@ fn to_csv(pairs: pest::iterators::Pairs<Rule>) -> String {
                 }
             }
 
-            lines.push(fields.join(",")); 
+            lines.push(fields.join(","));
         }
     }
 
