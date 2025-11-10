@@ -21,3 +21,17 @@ fn test_simple_field() {
     let pairs = Txt2CsvParser::parse(Rule::simple_field, input).unwrap();
     assert_eq!(pairs.as_str(), "Hello");
 }
+
+#[test]
+fn test_field_rule() {
+    let input = "[Data]";
+    let pairs = Txt2CsvParser::parse(Rule::field, input).unwrap();
+    assert_eq!(pairs.as_str(), "[Data]");
+}
+
+#[test]
+fn test_row_rule() {
+    let input = "A, B, C";
+    let pairs = Txt2CsvParser::parse(Rule::row, input).unwrap();
+    assert_eq!(pairs.as_str(), "A, B, C");
+}
